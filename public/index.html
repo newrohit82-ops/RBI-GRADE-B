@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RBI Grade B Economics Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>RBI Grade B Economics Daily Practice</h1>
+        <p class="subtitle">
+          Practice from simple to complex questions, evaluated using IBPS-style marking with AI.
+        </p>
+      </header>
+
+      <section class="status-card">
+        <div>
+          <h2>Progress</h2>
+          <p id="progress-text">Complete Level 1 to unlock Level 2.</p>
+        </div>
+        <div class="levels" id="level-buttons"></div>
+      </section>
+
+      <section class="practice-card">
+        <div class="card-header">
+          <h2 id="level-title">Level 1</h2>
+          <button id="refresh-btn" class="ghost">Refresh Questions</button>
+        </div>
+        <form id="practice-form"></form>
+        <button id="submit-btn" class="primary">Evaluate Answers</button>
+      </section>
+
+      <section class="results-card" id="results" hidden>
+        <h2>Results</h2>
+        <div class="scoreline">
+          <p id="score-text"></p>
+          <p id="unlock-text" class="unlock"></p>
+        </div>
+        <div id="results-list"></div>
+      </section>
+
+      <section class="info-card">
+        <h2>How Evaluation Works</h2>
+        <ul>
+          <li>Correct answers earn full marks per question.</li>
+          <li>Incorrect answers get negative marking of 0.25.</li>
+          <li>Unattempted answers score zero.</li>
+          <li>Score 70% or above to unlock the next level.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

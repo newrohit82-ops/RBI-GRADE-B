@@ -1,0 +1,162 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f5f6fa;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #4b5563;
+}
+
+.status-card,
+.practice-card,
+.results-card,
+.info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.status-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.levels {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.level-button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.level-button.active {
+  background: #1d4ed8;
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+.level-button:disabled {
+  background: #e5e7eb;
+  cursor: not-allowed;
+  color: #6b7280;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+textarea {
+  resize: vertical;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.primary,
+.ghost {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary {
+  background: #2563eb;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.ghost {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.results-card {
+  border-left: 6px solid #22c55e;
+}
+
+.scoreline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.unlock {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.result {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #f9fafb;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.explanation {
+  color: #4b5563;
+}
+
+@media (max-width: 720px) {
+  .status-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

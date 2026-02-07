@@ -1,0 +1,14 @@
+{
+  "name": "rbi-econ-practice",
+  "version": "0.1.0",
+  "description": "RBI Grade B Economics practice app with AI evaluation",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
